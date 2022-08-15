@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 import {Container, Menu, PageBody} from '../src/AppStyled'
 
 import HomeScreen from './pages/HomeScreen';
-import Tela2Screen from './pages/Tela2Screen';
 import MenuItem from './components/MenuItem';
 import Cart from '../src/components/Cart'
 import PrivateRoute from './components/PrivateRoute';
@@ -46,9 +45,6 @@ export default () => {
                         <PrivateRoute exact path="/profile">
                             <div>TELA DE PERFIL</div>
                         </PrivateRoute>
-                        <Route path="/tela2/:nome">
-                            <Tela2Screen />
-                        </Route>
                     </Switch>
                 </PageBody>
                 <Cart />

@@ -133,7 +133,7 @@ export default () => {
             </ProductPaginationArea>
             )}
             <Modal status={modalStatus} close={setModalStatus}>
-                <ModalProduct data={modalData}/>
+                <ModalProduct data={modalData} close={setModalStatus}/>
             </Modal>
         </Container>
     );
