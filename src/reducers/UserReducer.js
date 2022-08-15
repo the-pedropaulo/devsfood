@@ -9,7 +9,7 @@ export default (state = initialState, action) => {
             return {...state, token: action.payload.token};
         case 'SET_NAME':
             return {...state, name: action.payload.name};
+        default:
+            return state;
     }
-
-    return state;
 }

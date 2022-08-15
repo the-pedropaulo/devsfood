@@ -38,14 +38,14 @@ export default (state = initialState, action) => {
                     case '+':
                         productsB[action.payload.key].qt++;
                     break;
+                    default:
+                        return state;
                 }
             }
 
             return {...state, products};
         default:
-            return 0;
+            return state;
 
     }
-
-    return state;
 }

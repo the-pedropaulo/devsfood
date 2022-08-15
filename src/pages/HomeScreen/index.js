@@ -58,6 +58,7 @@ export default () => {
     useEffect(() => {
         setProducts([]);
         getProducts();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [categoryActive, activePage, activeSearch])
 
     useEffect(() => {
