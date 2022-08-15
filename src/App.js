@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { useSelector } from 'react-redux';
 
 import {Container, Menu, PageBody} from '../src/AppStyled'
 
@@ -12,7 +11,6 @@ import PrivateRoute from './components/PrivateRoute';
 import ReactTooltip from 'react-tooltip';
 
 export default () => {
-    const name = useSelector(state => state.user.name);
 
     return (
         <BrowserRouter>

@@ -71,7 +71,6 @@ export default () => {
     function handleOpenModal(data) {
         setModalData(data);
         setModalStatus(true);
-        console.log(data)
     }
 
     return (
